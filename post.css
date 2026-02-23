@@ -81,7 +81,8 @@ header{
 }
 footer{
     background-color: rgb(109, 2, 2);
-    height:500px;
+    /* height:500px; */
+     padding: 80px 20px;
     display: flex;
     color: white;
     padding-left: 20px;
@@ -176,4 +177,66 @@ footer{
     padding: 20px 0;
     font-size: 14px;
     border-top: 1px solid rgba(255,255,255,0.2);
+}
+/* ===== RESPONSIVE SECOND PAGE ===== */
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;  /* fixed height remove */
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-bar a{
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    #heading{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    .content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .content p{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .pagination{
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto; /* fixed height remove */
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .section2,
+    .section3{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .social-tags{
+        justify-content: center;
+    }
 }
