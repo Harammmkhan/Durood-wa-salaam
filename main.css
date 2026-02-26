@@ -263,6 +263,21 @@ footer{
     font-size: 14px;
     border-top: 1px solid rgba(255,255,255,0.2);
 }
+.dark-mode {
+    background-color: #111 !important;
+    color: #eee !important;
+    transition: 0.3s;
+}
+
+.dark-mode * {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+.dark-mode button {
+    background-color: #444 !important;
+    color: #fff !important;
+}
 /* ================= RESPONSIVE ================= */
 
 @media screen and (max-width: 768px){
